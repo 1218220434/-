@@ -1,0 +1,12 @@
+# node后台快速访问接口
+
+@url = http://localhost:8081
+###登陆
+POST {{url}}/login HTTP/1.1
+Content-Type: application/json
+{
+    "username":"admin",
+    "password":"123"
+}
+### 校验接口
+GET {{url}} HTTP/1.1

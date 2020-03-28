@@ -28,9 +28,16 @@
 
 # CSS 层叠样式表
 
-1.w3c盒子模型和IE盒子模型的区别：w3c盒子模型的范围只包括内容content的高度，IE盒子模型的范围还要包括padding和border的高度，IE6浏览器之后，统一遵照w3c盒子模型，不过css3的box-sizing属性给了开发者选择盒模型解析方式的权利。W3C的盒模型方式被称为“content-box”，IE的被称为“border-box”，使用box-sizing: border-box;就是为了在设置有padding值和border值的时候不把宽度撑开。
+1. w3c盒子模型和IE盒子模型的区别：
 
-2.css3新增功能： 选择器，背景，圆角，阴影，过渡，变形，动画，弹性布局.... 
+   ``` 
+   w3c盒子模型的范围只包括内容content的高度
+   IE盒子模型的范围还要包括padding和border的高度
+   ```
+
+   IE6浏览器之后，统一遵照w3c盒子模型，不过css3的box-sizing属性给了开发者选择盒模型解析方式的权利。W3C的盒模型方式被称为“content-box”，IE的被称为“border-box”，使用box-sizing: border-box;就是为了在设置有padding值和border值的时候不把宽度撑开。
+
+   2.css3新增功能： 选择器，背景，圆角，阴影，过渡，变形，动画，弹性布局.... 
 
   选择器，背景，圆角，阴影，过渡，变形，动画，弹性布局.... 
 

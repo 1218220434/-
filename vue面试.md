@@ -23,9 +23,12 @@
 绑定一个ref属性，然后通过this.$refs.attributes就能拿到对应的标签，不管是直接查询标签还是引入了jquery
 DOM操作都不能放在munted生命周期之前，vue中munted之前页面dom还没有渲染完毕，在munted之前获取不到vue中的dom
 
-# vue状态管理
+# vue状态管理 ！！！
 State：存储状态数据
 Getter：从状态数据派生数据，相当于State的计算属性。
 Mutation：存储用于同步更改状态数据的方法，默认传入的参数为state。
 Action：存储用于异步更改状态数据，但不是直接更改，而是通过触发Mutation方法实现，默认参数为context。
 Module：Vuex模块化。
+
+# vue插槽
+

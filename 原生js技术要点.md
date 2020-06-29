@@ -108,3 +108,28 @@ let是ES6提出的用以处理块级作用域的声明方式，在函数内部�
         }
 ```
 
+## 数组方法
+
+```
+var myApp = [
+    {
+      img: '../../../assets/home/u77.png',
+      name: '成绩查询',
+      router: '/score-search',
+    },
+    {
+      img: '../../../assets/home/u75.png',
+      name: '我的课表',
+      router: '/my-schedule',
+    },
+    {
+      img: '../../../assets/home/u79.png',
+      name: '住宿查询',
+      router: '/living-search',
+    }
+
+  ]
+  myApp.splice(i,1)
+  i表示一个给定的索引，即删除该索引的元素
+```
+

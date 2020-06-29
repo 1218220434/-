@@ -213,7 +213,63 @@ app.controller('myCtrl-myMethod', function ($scope, hexafy) {
 });
 ```
 
+### 5.选择框和表格
 
+联系选择框和表格，并加入过滤器和循环渲染。
 
+```html
+ 	<table>
+        <tr ng-repeat="x in namess.records | orderBy : 'Country'">
+          <td>{{ x.Name }}</td>
+          <td>{{ x.Country | uppercase}}</td>
+        </tr>
+      </table>
+```
 
+### 6.HTML DOM
+
+**ng-disabled** 指令直接绑定应用程序数据到 HTML 的 disabled 属性。多用于按钮或表单的可选不可选状态。
+
+**ng-show** 指令隐藏或显示一个 HTML 元素。类似于vue
+
+### 7.HTML 事件
+
+```html
+ 			<div>
+                <button ng-click="count = count + 1">点我！</button>
+                <p>{{ count }}</p>
+            </div>
+```
+
+基本的点击事件
+
+也可以写成方法，控制其他元素显示或者隐藏
+
+```html
+   <button ng-click="toggle()">隐藏/显示</button>
+
+            <p ng-hide="myVar">
+                名: <input type="text" ng-model="person.firstName"><br>
+                姓: <input type="text" ng-model="person.lastName"><br>
+                <br>
+                姓名: {{person.firstName + " " + person.lastName}}
+            </p>
+```
+
+```typescript
+  var app = angular.module('myApp', []);
+        app.controller('myCtrlq', function ($scope, $http) {
+            $scope.person = {
+                firstName: "John",
+                lastName: "Doe"
+            };
+            $scope.myVar = false;
+            $scope.toggle = function () {
+                $scope.myVar = !$scope.myVar;
+            };
+
+        })
+```
+
+**ng-hide** 指令用于设置应用的一部分 **不可见** 。
 
